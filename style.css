@@ -1,0 +1,58 @@
+body{
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+}
+
+#calculator_container{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: 0.1s;
+    width: 500px;
+}
+
+#screen{
+    background-color: white;
+    border: solid gray 1px;
+    margin-bottom: 5px;
+    transition: 0.1s;
+}
+
+#screen h1{
+    font-size: 40px;
+    padding: 20px 5px;
+    text-align: end;
+    margin: 0;
+    transition: 0.1s;
+}
+
+#buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.grpButt{
+    text-align: center;
+    border: solid white 1px;
+    margin: 0;
+    padding: 15px 0;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.1s;
+    background-color: rgb(243, 243, 243);
+    user-select: none; /* ngăn bôi đen văn bản */
+}
+
+.grpButt:hover{
+    border: solid black 1px;
+}
+
+.grpButt:active{
+    background-color: rgb(250, 250, 250);
+}
+
+@media screen and (max-width: 500px){
+    #calculator_container{
+        width: 100%;
+    }
+}
