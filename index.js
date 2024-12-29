@@ -103,7 +103,7 @@ function getResult(){
         // isEnter = false;
     } else {
         tempNum2 = Number(workSpace.textContent);
-        if(tempNum2 == ""){
+        if(tempNum2 == "" && !isEnter){
             tempNum2 = tempNum1;
         }
         workSpace.textContent = calculate();
